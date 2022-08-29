@@ -13,15 +13,19 @@ class MyTests {
 }*/
 
 /** launch */
-/*fun main() {
-    GlobalScope.launch {
-        println(doSomething())
-    }
-}
+/*
+fun main() = runBlocking {
+    println("Main starts: ${Thread.currentThread().name}")
 
-fun doSomething() {
-    println("Hello World!")
-}*/
+    launch {
+        println("doSomethings starts: ${Thread.currentThread().name}")
+        delay(1000)
+        println("doSomethings finished: ${Thread.currentThread().name}")
+    }
+
+    println("Main ends: ${Thread.currentThread().name}")
+}
+*/
 
 /** async */
 /*fun main() {
