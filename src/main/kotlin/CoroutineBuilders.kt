@@ -47,7 +47,7 @@ fun main() {
 
 /** async - async-await */
 fun main() = runBlocking {
-    val resultDeferred: Deferred<Int> = GlobalScope.async {
+    val resultDeferred: Deferred<Int> = async {
         delay(1000L)
         86
     }
