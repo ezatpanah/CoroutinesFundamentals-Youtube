@@ -14,16 +14,21 @@ class MyTests {
 
 /** launch */
 /*
-fun main() = runBlocking {
-    println("Main starts: ${Thread.currentThread().name}")
-
-    launch {
-        println("doSomethings starts: ${Thread.currentThread().name}")
-        delay(1000)
-        println("doSomethings finished: ${Thread.currentThread().name}")
+fun main() {
+    GlobalScope.launch {
+        delay(1000L)
+        println("World!")
     }
-
-    println("Main ends: ${Thread.currentThread().name}")
+    GlobalScope.launch {
+        delay(1000L)
+        println("World!")
+    }
+    GlobalScope.launch {
+        delay(1000L)
+        println("World!")
+    }
+    println("Hello,")
+    Thread.sleep(2000L)
 }
 */
 
