@@ -45,36 +45,17 @@ fun main() {
 }
 */
 
-/** async */
-/*fun main() {
-    GlobalScope.async {
-        doSomething()
+/** async - async-await */
+fun main() = runBlocking {
+    val resultDeferred: Deferred<Int> = GlobalScope.async {
+        delay(1000L)
+        86
     }
+    // do Something...
+    val result: Int = resultDeferred.await() // (1 sec)
+    println(result)
+    // or just
+    println(resultDeferred.await())
 }
 
-fun doSomething() {
-
-}*/
-
-/** async-await */
-val a = 10
-val b = 20
-fun main() {
-    println("Gone to calculate the sum of a and b")
-
-    GlobalScope.launch {
-        val result = async {
-            calculateSum()
-        }
-        println("Sum of a & b is: ${result.await()}")
-    }
-    println("Carry on with some other task while the coroutine is waiting for a result...")
-    runBlocking {
-        delay(3000L) // keeping jvm alive till calculateSum is finished
-    }
-}
-suspend fun calculateSum(): Int {
-    delay(2000L) // simulate long running task
-    return a + b
-}
 
