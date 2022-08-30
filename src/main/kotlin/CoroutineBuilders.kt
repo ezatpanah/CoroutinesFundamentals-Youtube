@@ -2,11 +2,24 @@ import kotlinx.coroutines.*
 import org.testng.annotations.Test
 
 /** runBlocking */
-/*fun main() = runBlocking {
+/*fun main() {
+   runBlocking {
+       delay(1000L)
+       println("World!")
+   }
+   runBlocking {
+       delay(1000L)
+       println("World!")
+   }
+   runBlocking {
+       delay(1000L)
+       println("World!")
+   }
+   println("Hello,")
+}*/
 
-}
-
-class MyTests {
+//TestCase
+/*class MyTests {
     @Test
     fun `a test`() = runBlocking {
     }
