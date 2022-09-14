@@ -6,7 +6,9 @@ YouTube Video :
 <a href="https://youtu.be/i-u7sCWQcVQ" target="_blank"><img alt="Ezatpanah CoroutinesFundamentals-Youtube" src="Coroutines-cover.jpg" width="60%"></a>
 <br>
 
-[Medium Articl](https://medium.com/@ezatpanah/mastering-coroutines-in-kotlin-complete-guide-921bb63d2594)
+Medium's Article :
+<br>
+https://medium.com/@ezatpanah/mastering-coroutines-in-kotlin-complete-guide-921bb63d2594
 
 ✨ Join Medium to read thousands of valuable stories ✨ 
 <br>
